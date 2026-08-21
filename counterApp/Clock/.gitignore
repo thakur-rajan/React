@@ -51,3 +51,29 @@ media/
 images/
 public/uploads/
 
+# Files that should not be pushed to GitHub
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.crt
+coverage/
+build/
+.vite/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.tmp/
+tmp/
+*.log
+*.pid
+*.seed
+*.pid.lock
+.DS_Store
+Thumbs.db
+
