@@ -1,0 +1,91 @@
+#contact{
+    height: 100%;
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftcontact{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightcontact{
+    width: 50%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.rightcontact form{
+    width: 70%;
+    height:70%;
+    background-color: rgb(15, 15, 33);
+    box-shadow: 2px 2px 10px black ,2px 2px 20px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightcontact form:hover{
+    box-shadow: 2px 2px 10px rgba(167, 212, 224, 0.683) ,2px 2px 20px rgba(193, 233, 239, 0.536);
+}
+.rightcontact form input{
+    width:80%;
+    height: 50px;
+    border:2px solid blue;
+    border-radius: 20px;
+    padding:20px; 
+    outline: none;  
+}
+.rightcontact form textarea{
+    width:80%;
+    height: 150px;
+    border:2px solid blue;
+    border-radius: 20px;
+    padding:20px;
+    outline: none;   
+}
+#btn{
+    background-color: rgb(194, 194, 242);
+    font-size: 20px ;
+    padding: 0px;
+    transition: all 0.5s;
+}
+#btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: aliceblue;
+}
+.leftcontact img{
+     width: 60%;
+    filter: drop-shadow(2px 2px 20px rgba(72, 221, 216, 0.744));
+}
+.leftcontact img:hover{
+    width: 65%;
+    filter: drop-shadow(2px 2px 20px rgba(85, 218, 233, 0.583)); 
+}
+@media screen and (max-width:750px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .rightcontact{
+        width: 100%;
+        
+    }
+    .leftcontact img{
+        width: 150%;
+    }
+    .rightcontact{
+        width: 100%;
+        
+    }
+}
